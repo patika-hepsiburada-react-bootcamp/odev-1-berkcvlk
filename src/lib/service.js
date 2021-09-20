@@ -14,7 +14,7 @@ const getData = async (id) => {
     const { data: user } = await fetcher(`/users/${id}`);
     const { data: posts } = await fetcher(`/posts?${user.id}`);
 
-    return { ...user, posts: posts };
+    return { ...user, posts };
   } catch (err) {
     return err.message;
   }
