@@ -5,9 +5,9 @@ const fetcher = axios.create({
 });
 
 /**
- * Kullanıcı id'ye göre ilgili postları getirecek fonksiyon
- * @param {number} id Kullanıcı id
- * @returns {Promise} İstek yerine getirildiğinde kullanıcı ve kullanıcıya ait post bilgileri içerir
+ * Function that returns related posts by user id
+ * @param {number} id User id
+ * @returns {Promise} Contains the user and the user's post when request fullfilled.
  */
 const getData = async (id) => {
   try {
